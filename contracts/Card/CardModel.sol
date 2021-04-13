@@ -3,13 +3,12 @@ pragma solidity 0.4.25;
 
 contract CardModel {
 
- struct Skills {
-   uint32 attack;
-   uint32 defense;
- } 
-
+ enum CardType { Trap, Magic, Normal }
+ enum MonsterType { Fairy, Fairy, Water, Beast, WarriorBeast, Dinosaur, DivineBeast, Dragon, Angel, Mage, Demon, Fish, Bug, Machine, Plant, Pyro, Reptile, Rock, SeaSerpent, Thunder, Warrior, WingedBeast, Zombie, Psychic }
  struct Card {
-  uint8 typeCard;
-  Skills skill;
+  CardType Type;
+  MonsterType monterType;
+  uint attack;
+  uint defense;
  }
 }
