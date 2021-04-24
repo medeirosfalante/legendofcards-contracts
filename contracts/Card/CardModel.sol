@@ -10,5 +10,6 @@ contract CardModel {
   MonsterType monterType;
   uint attack;
   uint defense;
+  string name;
  }
 }
