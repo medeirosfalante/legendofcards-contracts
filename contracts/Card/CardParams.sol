@@ -1,11 +1,5 @@
-pragma solidity 0.8.3;
-
+pragma solidity 0.8.4;
 
 import "../Common/Upgradable.sol";
 
-
-contract CardParams is Upgradable {
-}
-
-
-
+contract CardParams is Upgradable {}

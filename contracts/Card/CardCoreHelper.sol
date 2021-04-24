@@ -1,4 +1,4 @@
-pragma solidity 0.8.3;
+pragma solidity 0.8.4;
 
 import "./CardUtils.sol";
 import "../Common/Name.sol";
@@ -8,7 +8,4 @@ import "../Common/SafeMath32.sol";
 import "../Common/SafeMath256.sol";
 import "../Common/SafeConvert.sol";
 
-
-
-
-contract 
+contract CardCoreHelper {}
