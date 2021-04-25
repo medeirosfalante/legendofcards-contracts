@@ -17,8 +17,21 @@ contract CardStorage is CardModel, ERC721Token {
         return cards.length;
     }
 
-    function push(address _sender) public OnlyController returns (uint256 id) {
-        id = cards.push(new Card()).sub(1);
+    function push(
+        address _sender,
+        CardType _cardType,
+        MonsterType _monterType,
+        string _name
+    ) public OnlyController returns (uint256 id) {
+        id = cards
+            .push(
+            new Card({
+                name: _name,
+                cardType: _cardType,
+                monterType: _monterType
+            })
+        )
+            .sub(1);
         _mint(_sender, id);
     }
 }

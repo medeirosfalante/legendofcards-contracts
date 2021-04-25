@@ -28,7 +28,7 @@ contract CardModel {
         Psychic
     }
     struct Card {
-        CardType Type;
+        CardType cardType;
         MonsterType monterType;
         uint256 attack;
         uint256 defense;
