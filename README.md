@@ -1,0 +1,1 @@
+#LegendOfCards Decentralized BSC Game

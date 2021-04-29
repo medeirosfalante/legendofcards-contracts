@@ -1,6 +1,26 @@
-pagma solidity 0.4.25;
+// SPDX-License-Identifier: MIT
 
-import "../Common/ERC721/ERC721Token.sol";
+pragma solidity 0.8.4;
 
+import "./CardBase.sol";
+import "./CardModel.sol";
 
-contract Card
+contract CardCore is CardBase {
+    function createCard(
+        address _sender,
+        CardModel.CardType _cardType,
+        CardModel.MonsterType _monterType,
+        string memory _name,
+        uint256 _attack,
+        uint256 _defense
+    ) external onlyController returns (uint256 newCardId) {
+        newCardId = _storage_.push(
+            _sender,
+            _cardType,
+            _monterType,
+            _name,
+            _attack,
+            _defense
+        );
+    }
+}

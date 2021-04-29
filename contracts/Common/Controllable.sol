@@ -1,4 +1,6 @@
-pragma solidity 0.4.25;
+// SPDX-License-Identifier: MIT
+
+pragma solidity 0.8.4;
 
 import "./Ownable.sol";
 
@@ -14,7 +16,9 @@ contract Controllable is Ownable {
         return controllers[_controller];
     }
 
-    function _setControllers(address[] _controllers, bool _active) internal {
+    function _setControllers(address[] memory _controllers, bool _active)
+        internal
+    {
         for (uint256 i = 0; i < _controllers.length; i++) {
             _validateAddress(_controllers[i]);
             controllers[_controllers[i]] = _active;

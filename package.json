@@ -1,0 +1,25 @@
+{
+  "name": "legendofcards",
+  "version": "1.0.0",
+  "description": "Decentrazlied Magic Card game",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LegendOfCards/decentralized.git"
+  },
+  "author": "Rafael Medeiros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LegendOfCards/decentralized/issues"
+  },
+  "homepage": "https://github.com/LegendOfCards/decentralized#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0"
+  }
+}

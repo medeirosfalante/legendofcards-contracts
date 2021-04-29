@@ -1,5 +1,6 @@
-pragma solidity 0.4.25;
+// SPDX-License-Identifier: MIT
 
+pragma solidity 0.8.4;
 
 /**
  * @title Ownable
@@ -9,19 +10,20 @@ pragma solidity 0.4.25;
 contract Ownable {
     address public owner;
 
-
-    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+    event OwnershipTransferred(
+        address indexed previousOwner,
+        address indexed newOwner
+    );
 
     function _validateAddress(address _addr) internal pure {
         require(_addr != address(0), "invalid address");
     }
 
-
     /**
      * @dev The Ownable constructor sets the original `owner` of the contract to the sender
      * account.
      */
-    constructor() public {
+    constructor() {
         owner = msg.sender;
     }
 
@@ -42,5 +44,4 @@ contract Ownable {
         emit OwnershipTransferred(owner, newOwner);
         owner = newOwner;
     }
-
 }
