@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/LegendOfCards/decentralized/issues"
   },
-  "homepage": "https://github.com/LegendOfCards/decentralized#readme"
+  "homepage": "https://github.com/LegendOfCards/decentralized#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0"
+  }
 }
